@@ -19,7 +19,6 @@ if (people.length % 2 !== 0) {
   let senderShuffle = [...people.sort(() => (Math.random() > 0.5 ? 1 : -1))];
   let recieverShuffle = [...people.sort(() => (Math.random() > 0.5 ? 1 : -1))];
 
-  // only works with even number
   while (senderShuffle.length) {
     const sender = senderShuffle.pop();
 
