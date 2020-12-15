@@ -11,9 +11,6 @@ const people = [
   },
 ];
 
-if (people.length % 2 !== 0) {
-  throw "Must provide an even number of people";
-}
 
 (async function () {
   let senderShuffle = [...people.sort(() => (Math.random() > 0.5 ? 1 : -1))];
